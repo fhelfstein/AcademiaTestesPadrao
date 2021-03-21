@@ -3,6 +3,7 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using System.Collections.Generic;
 using System.Text;
+using AcademiaTestePadra.Pages;
 
 namespace AcademiaTestePadra.Models
 {
