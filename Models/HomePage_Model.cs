@@ -23,6 +23,7 @@ namespace AcademiaTestePadra.Models
         {
             Assert.IsTrue(home.linkItemPresentInSalle().Displayed);
             home.linkItemPresentInSalle().Click();
+
             //home.linkCriarUsuario().Click();
         }
     }

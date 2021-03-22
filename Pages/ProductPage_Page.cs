@@ -13,5 +13,10 @@ namespace AcademiaTestePadra.Pages
         {
             driver = superDriver;
         }
+
+        public IWebElement linkItemPresentInSalle()
+        {
+            return driver.FindElement(By.CssSelector(".pb-center-column>h1"));
+        }
     }
 }
