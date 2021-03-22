@@ -19,12 +19,13 @@ namespace AcademiaTestePadra.Models
 
 
 
-        public void navegaCriaUsuario()
+        public void openItemInHomePage()
         {
             Assert.IsTrue(home.linkItemPresentInSalle().Displayed);
             home.linkItemPresentInSalle().Click();
+            string productName = home.txtNameProductInPageProduct().GetAttribute("textContent");
 
-            //home.linkCriarUsuario().Click();
+            Assert.AreEqual("Faded Short Sleeve T-shirts", productName);
         }
     }
 }

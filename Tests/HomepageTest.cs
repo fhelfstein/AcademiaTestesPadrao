@@ -15,14 +15,14 @@ namespace AcademiaTestePadra.Tests
             home = new HomePage_Model(this.driver);
         }
 
-/*        [Test]
+        [Test]
         public void primeiro()
         {
 
-            home.navegaCriaUsuario();
+            home.openItemInHomePage();
 
-            driver.Dispose();
-        }*/
+            //driver.Dispose();
+        }
 
     }
 }

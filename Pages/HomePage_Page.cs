@@ -19,9 +19,9 @@ namespace AcademiaTestePadra.Pages
             return driver.FindElement(By.XPath("//*[@id='homefeatured']/li[1]/div/div[2]/h5/a"));
         }
 
-        public IWebElement txtNome()
+        public IWebElement txtNameProductInPageProduct()
         {
-            return driver.FindElement(By.Id("user_name"));
+            return driver.FindElement(By.CssSelector(".pb-center-column>h1"));
         }
 
     }
