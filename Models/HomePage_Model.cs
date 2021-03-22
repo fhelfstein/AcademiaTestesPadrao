@@ -21,18 +21,9 @@ namespace AcademiaTestePadra.Models
 
         public void navegaCriaUsuario()
         {
-            Assert.IsTrue(home.linkFormulario().Displayed);
-            home.linkFormulario().Click();
-            home.linkCriarUsuario().Click();
-        }
-
-        public void criaUsuario(String sNome, String sSobrenome, String sEmail)
-        {
-            Assert.IsTrue(home.txtNome().Displayed);
-            home.txtNome().SendKeys(sNome);
-            home.txtSobrenome().SendKeys(sSobrenome);
-            home.txtEmail().SendKeys(sEmail);
-            home.btnSubmit().Click();
+            Assert.IsTrue(home.linkItemPresentInSalle().Displayed);
+            home.linkItemPresentInSalle().Click();
+            //home.linkCriarUsuario().Click();
         }
     }
 }

@@ -21,8 +21,6 @@ namespace AcademiaTestePadra.Tests
 
             home.navegaCriaUsuario();
 
-            home.criaUsuario("Teste", "teste", "teste@teste.com");
-
             driver.Dispose();
         }
 

@@ -14,6 +14,11 @@ namespace AcademiaTestePadra.Pages
             driver = superDriver;
         }
 
+        public IWebElement linkItemPresentInSalle()
+        {
+            return driver.FindElement(By.XPath("//*[@id='homefeatured']/li[1]/div/div[2]/h5/a"));
+        }
+
         public IWebElement linkFormulario()
         {
             return driver.FindElement(By.LinkText("Formulário"));
@@ -27,6 +32,11 @@ namespace AcademiaTestePadra.Pages
         public IWebElement txtNome()
         {
             return driver.FindElement(By.Id("user_name"));
+        }
+
+        internal object txtnome()
+        {
+            throw new NotImplementedException();
         }
 
         public IWebElement txtSobrenome()
