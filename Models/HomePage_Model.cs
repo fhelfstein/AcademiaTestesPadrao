@@ -21,11 +21,22 @@ namespace AcademiaTestePadra.Models
 
         public void openItemInHomePage()
         {
+            // Feature: Abrir um item da Home Page
             Assert.IsTrue(home.linkItemPresentInSalle().Displayed);
             home.linkItemPresentInSalle().Click();
             string productName = home.txtNameProductInPageProduct().GetAttribute("textContent");
 
             Assert.AreEqual("Faded Short Sleeve T-shirts", productName);
+        }
+
+        public void searchForAnItem() {
+            // Feature: Realizar uma busca por algum item
+            Assert.IsTrue(home.inputSearchQueryTop().Displayed);
+
+            string productBlouse = "Blouse";
+            home.inputSearchQueryTop().SendKeys(productBlouse);
+            home.btnSubmitSearch().Click();
+
         }
     }
 }

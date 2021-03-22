@@ -24,5 +24,17 @@ namespace AcademiaTestePadra.Pages
             return driver.FindElement(By.CssSelector(".pb-center-column>h1"));
         }
 
+        public IWebElement inputSearchQueryTop()
+        {
+            return driver.FindElement(By.Id("search_query_top"));
+        }
+
+        public IWebElement btnSubmitSearch()
+        {
+            // submit_search
+            return driver.FindElement(By.Name("submit_search"));
+
+        }
+
     }
 }
